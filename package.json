@@ -1,0 +1,12 @@
+{
+  "name": "hyperbloomui",
+  "version": "0.1.0",
+  "description": "Vuejs UI framework for the hyperbloom app",
+  "main": "./src/index.ts",
+  "repository": "https://github.com/HyperboreaHQ/hyperbloomui",
+  "author": "Nikita Podvirnyi <krypt0nn@vk.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "vue": "^3.4.35"
+  }
+}
