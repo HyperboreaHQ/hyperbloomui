@@ -3,6 +3,8 @@
         App,
         HorizontalBox,
         VerticalBox,
+        Clamp,
+
         Text,
         Link
     } from '../src/index';
@@ -25,6 +27,12 @@
             <Text>123</Text>
             <Text>123</Text>
         </VerticalBox>
+
+        <div style="height: 400px">
+            <Clamp>
+                <Text>Example clamp</Text>
+            </Clamp>
+        </div>
 
         <Text>123</Text>
 
