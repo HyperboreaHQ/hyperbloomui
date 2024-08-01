@@ -4,6 +4,8 @@
         HorizontalBox,
         VerticalBox,
         Clamp,
+        MutedContainer,
+        AccentContainer,
 
         Text,
         Link
@@ -29,10 +31,18 @@
         </VerticalBox>
 
         <div style="height: 400px">
-            <Clamp>
+            <Clamp height="200px">
                 <Text>Example clamp</Text>
             </Clamp>
         </div>
+
+        <MutedContainer>
+            <Text>Muted Container</Text>
+        </MutedContainer>
+
+        <AccentContainer>
+            <Text>Accent Container</Text>
+        </AccentContainer>
 
         <Text>123</Text>
 
