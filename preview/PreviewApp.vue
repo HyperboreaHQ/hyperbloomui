@@ -3,7 +3,8 @@
         App,
         HorizontalBox,
         VerticalBox,
-        Text
+        Text,
+        Link
     } from '../src/index';
 </script>
 
@@ -26,5 +27,7 @@
         </VerticalBox>
 
         <Text>123</Text>
+
+        <Link @click="console.log(123)">Example link</Link>
     </App>
 </template>
