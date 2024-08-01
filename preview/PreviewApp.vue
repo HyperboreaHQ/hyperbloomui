@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <App>
+    <App accentColor="red">
         <p>123</p>
     </App>
 </template>

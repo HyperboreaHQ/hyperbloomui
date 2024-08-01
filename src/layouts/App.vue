@@ -4,12 +4,16 @@
     import { loadTheme } from '../themes/index';
 
     const props = defineProps({
-        theme: String | undefined
+        theme: String,
+        accentColor: String
     });
 
     loadTheme(props.theme)
-        .then((name) => state.hyperbloomui.theme = name)
+        .then((name) => state.hyperbloomui.theme.name = name)
         .catch((err) => console.error(`Failed to load theme ${props.theme}: ${err}`));
+
+    if (typeof(props.accentColor) === 'string')
+        state.hyperbloomui.theme.colors.accent = props.accentColor;
 </script>
 
 <style lang="sass">
@@ -24,7 +28,10 @@
 </style>
 
 <template>
-    <div :class="`hyperbloomui--app hyperbloomui--${state.hyperbloomui.theme}--app`">
+    <div
+        :style="`--hyperbloomui--colors--accent: ${state.hyperbloomui.theme.colors.accent};`"
+        :class="`hyperbloomui--app hyperbloomui--${state.hyperbloomui.theme.name}--app`"
+    >
         <slot />
     </div>
 </template>
