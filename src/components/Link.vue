@@ -27,7 +27,10 @@
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
         `"
-        :class="`hyperbloomui--link hyperbloomui--${state.hyperbloomui.theme.name}--link`"
+        :class="`
+            hyperbloomui--link
+            hyperbloomui--${state.hyperbloomui.theme.name}--link
+        `"
         @click="$emit('click')"
     >
         <slot />

@@ -13,7 +13,8 @@
         LinkBox,
         Button,
         FlatButton,
-        AccentButton
+        AccentButton,
+        ToggleButton
     } from '../src/index';
 </script>
 
@@ -57,6 +58,7 @@
             <Button @click="console.log(123)">Example button</Button>
             <FlatButton @click="console.log(123)">Example flat button</FlatButton>
             <AccentButton @click="console.log(123)">Example accent button</AccentButton>
+            <ToggleButton @click="console.log(123)">Example toggle button</ToggleButton>
         </HorizontalBox>
     </App>
 </template>

@@ -21,7 +21,10 @@
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
         `"
-        :class="`hyperbloomui--text hyperbloomui--${state.hyperbloomui.theme.name}--text`"
+        :class="`
+            hyperbloomui--text
+            hyperbloomui--${state.hyperbloomui.theme.name}--text
+        `"
     >
         <slot />
     </div>

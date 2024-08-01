@@ -31,7 +31,10 @@
         :style="`
             margin: ${props.margin ?? '0px'};
         `"
-        :class="`hyperbloomui--clamp-container hyperbloomui--${state.hyperbloomui.theme.name}--clamp-container`"
+        :class="`
+            hyperbloomui--clamp-container
+            hyperbloomui--${state.hyperbloomui.theme.name}--clamp-container
+        `"
     >
         <div
             aria-component-id="clamp"
@@ -39,7 +42,10 @@
                 max-width: ${props.width ?? '600px'};
                 max-height: ${props.height ?? 'unset'};
             `"
-            :class="`hyperbloomui--clamp hyperbloomui--${state.hyperbloomui.theme.name}--clamp`"
+            :class="`
+                hyperbloomui--clamp
+                hyperbloomui--${state.hyperbloomui.theme.name}--clamp
+            `"
         >
             <slot />
         </div>

@@ -14,12 +14,15 @@
 
 <template>
     <div
-        aria-component-id="button"
+        aria-component-id="accent-button"
         :style="`
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
         `"
-        :class="`hyperbloomui--button hyperbloomui--${state.hyperbloomui.theme.name}--accent-button`"
+        :class="`
+            hyperbloomui--button
+            hyperbloomui--${state.hyperbloomui.theme.name}--accent-button
+        `"
         @click="$emit('click')"
     >
         <slot />

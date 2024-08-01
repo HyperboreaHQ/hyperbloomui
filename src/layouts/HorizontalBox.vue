@@ -27,7 +27,10 @@
             padding: ${props.padding ?? '0px'};
             justify-content: ${props.justify ?? 'flex-start'};
         `"
-        :class="`hyperbloomui--horizontal-box hyperbloomui--${state.hyperbloomui.theme.name}--horizontal-box`"
+        :class="`
+            hyperbloomui--horizontal-box
+            hyperbloomui--${state.hyperbloomui.theme.name}--horizontal-box
+        `"
     >
         <slot />
     </div>

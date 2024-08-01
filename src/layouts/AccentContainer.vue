@@ -21,7 +21,10 @@
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
         `"
-        :class="`hyperbloomui--accent-container hyperbloomui--${state.hyperbloomui.theme.name}--accent-container`"
+        :class="`
+            hyperbloomui--accent-container
+            hyperbloomui--${state.hyperbloomui.theme.name}--accent-container
+        `"
     >
         <slot />
     </div>

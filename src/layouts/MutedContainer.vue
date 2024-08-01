@@ -20,7 +20,10 @@
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
         `"
-        :class="`hyperbloomui--muted-container hyperbloomui--${state.hyperbloomui.theme.name}--muted-container`"
+        :class="`
+            hyperbloomui--muted-container
+            hyperbloomui--${state.hyperbloomui.theme.name}--muted-container
+        `"
     >
         <slot />
     </div>

@@ -31,8 +31,13 @@
 <template>
     <div
         aria-component-id="app"
-        :style="`--hyperbloomui--colors--accent: ${state.hyperbloomui.theme.colors.accent};`"
-        :class="`hyperbloomui--app hyperbloomui--${state.hyperbloomui.theme.name}--app`"
+        :style="`
+            --hyperbloomui--colors--accent: ${state.hyperbloomui.theme.colors.accent};
+        `"
+        :class="`
+            hyperbloomui--app
+            hyperbloomui--${state.hyperbloomui.theme.name}--app
+        `"
     >
         <slot />
     </div>
