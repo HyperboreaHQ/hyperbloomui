@@ -19,7 +19,7 @@
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
         `"
-        :class="`hyperbloomui--button hyperbloomui--${state.hyperbloomui.theme.name}--flat-button`"
+        :class="`hyperbloomui--button hyperbloomui--${state.hyperbloomui.theme.name}--accent-button`"
         @click="$emit('click')"
     >
         <slot />

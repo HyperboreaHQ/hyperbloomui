@@ -4,6 +4,7 @@ import TextBox from './TextBox.vue';
 import LinkBox from './LinkBox.vue';
 import Button from './Button.vue';
 import FlatButton from './FlatButton.vue';
+import AccentButton from './AccentButton.vue';
 
 export {
     Text,
@@ -11,5 +12,6 @@ export {
     TextBox,
     LinkBox,
     Button,
-    FlatButton
+    FlatButton,
+    AccentButton
 };

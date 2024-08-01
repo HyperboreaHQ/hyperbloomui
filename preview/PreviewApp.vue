@@ -12,7 +12,8 @@
         TextBox,
         LinkBox,
         Button,
-        FlatButton
+        FlatButton,
+        AccentButton
     } from '../src/index';
 </script>
 
@@ -55,6 +56,7 @@
         <HorizontalBox padding="4px 8px" spacing="8px">
             <Button @click="console.log(123)">Example button</Button>
             <FlatButton @click="console.log(123)">Example flat button</FlatButton>
+            <AccentButton @click="console.log(123)">Example accent button</AccentButton>
         </HorizontalBox>
     </App>
 </template>
