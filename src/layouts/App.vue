@@ -1,7 +1,8 @@
 <script async setup>
     import { defineProps } from 'vue';
-    import state from '../state';
     import { loadTheme } from '../themes/index';
+
+    import state from '../state';
 
     const props = defineProps({
         theme: String,
@@ -29,6 +30,7 @@
 
 <template>
     <div
+        aria-component-id="app"
         :style="`--hyperbloomui--colors--accent: ${state.hyperbloomui.theme.colors.accent};`"
         :class="`hyperbloomui--app hyperbloomui--${state.hyperbloomui.theme.name}--app`"
     >

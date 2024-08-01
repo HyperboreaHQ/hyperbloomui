@@ -1,9 +1,18 @@
 <script setup>
-    import { App } from '../src/index';
+    import {
+        App,
+        HorizontalBox
+    } from '../src/index';
 </script>
 
 <template>
     <App accentColor="red">
-        <p>123</p>
+        <HorizontalBox justify="center" spacing="8px">
+            <p>123</p>
+            <p>123</p>
+            <p>123</p>
+            <p>123</p>
+            <p>123</p>
+        </HorizontalBox>
     </App>
 </template>
