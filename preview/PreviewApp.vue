@@ -11,7 +11,8 @@
         Link,
         TextBox,
         LinkBox,
-        Button
+        Button,
+        FlatButton
     } from '../src/index';
 </script>
 
@@ -51,6 +52,9 @@
 
         <Link @click="console.log(123)">Example link</Link>
 
-        <Button @click="console.log(123)">Example button</Button>
+        <HorizontalBox padding="4px 8px" spacing="8px">
+            <Button @click="console.log(123)">Example button</Button>
+            <FlatButton @click="console.log(123)">Example flat button</FlatButton>
+        </HorizontalBox>
     </App>
 </template>
