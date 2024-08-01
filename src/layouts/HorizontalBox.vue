@@ -15,6 +15,7 @@
         display: flex
         flex-direction: row
         flex-wrap: nowrap
+        width: 100%
 </style>
 
 <template>

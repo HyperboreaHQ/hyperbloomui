@@ -2,26 +2,29 @@
     import {
         App,
         HorizontalBox,
-        VerticalBox
+        VerticalBox,
+        Text
     } from '../src/index';
 </script>
 
 <template>
     <App accentColor="red">
         <HorizontalBox justify="center" spacing="8px">
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
+            <Text>123</Text>
+            <Text>123</Text>
+            <Text>123</Text>
+            <Text>123</Text>
+            <Text>123</Text>
         </HorizontalBox>
 
         <VerticalBox>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
+            <Text>123</Text>
+            <Text>123</Text>
+            <Text>123</Text>
+            <Text>123</Text>
+            <Text>123</Text>
         </VerticalBox>
+
+        <Text>123</Text>
     </App>
 </template>
