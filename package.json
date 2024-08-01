@@ -1,12 +1,24 @@
 {
-  "name": "hyperbloomui",
-  "version": "0.1.0",
-  "description": "Vuejs UI framework for the hyperbloom app",
-  "main": "./src/index.ts",
-  "repository": "https://github.com/HyperboreaHQ/hyperbloomui",
-  "author": "Nikita Podvirnyi <krypt0nn@vk.com>",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "vue": "^3.4.35"
-  }
+    "name": "hyperbloomui",
+    "version": "0.1.0",
+    "description": "Vuejs UI framework for the hyperbloom app",
+    "private": true,
+    "main": "./src/index.ts",
+    "repository": "https://github.com/HyperboreaHQ/hyperbloomui",
+    "author": "Nikita Podvirnyi <krypt0nn@vk.com>",
+    "license": "GPL-3.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc -b && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.4.35"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.1.1",
+        "typescript": "^5.5.3",
+        "vite": "^5.3.5",
+        "vue-tsc": "^2.0.29"
+    }
 }
