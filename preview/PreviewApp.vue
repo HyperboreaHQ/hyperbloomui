@@ -8,7 +8,10 @@
         AccentContainer,
 
         Text,
-        Link
+        Link,
+        TextBox,
+        LinkBox,
+        Button
     } from '../src/index';
 </script>
 
@@ -47,5 +50,7 @@
         <Text>123</Text>
 
         <Link @click="console.log(123)">Example link</Link>
+
+        <Button @click="console.log(123)">Example button</Button>
     </App>
 </template>
