@@ -1,7 +1,8 @@
 <script setup>
     import {
         App,
-        HorizontalBox
+        HorizontalBox,
+        VerticalBox
     } from '../src/index';
 </script>
 
@@ -14,5 +15,13 @@
             <p>123</p>
             <p>123</p>
         </HorizontalBox>
+
+        <VerticalBox>
+            <p>123</p>
+            <p>123</p>
+            <p>123</p>
+            <p>123</p>
+            <p>123</p>
+        </VerticalBox>
     </App>
 </template>

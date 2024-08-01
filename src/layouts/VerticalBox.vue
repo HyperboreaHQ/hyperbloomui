@@ -11,22 +11,22 @@
 </script>
 
 <style lang="sass">
-    .hyperbloomui--horizontal-box
+    .hyperbloomui--vertical-box
         display: flex
-        flex-direction: row
+        flex-direction: column
         flex-wrap: nowrap
 </style>
 
 <template>
     <div
-        aria-component-id="horizontal-box"
+        aria-component-id="vertical-box"
         :style="`
             gap: ${props.spacing ?? '0px'};
             margin: ${props.margin ?? '0px'};
             padding: ${props.padding ?? '0px'};
             justify-content: ${props.justify ?? 'flex-start'};
         `"
-        :class="`hyperbloomui--horizontal-box hyperbloomui--${state.hyperbloomui.theme.name}--horizontal-box`"
+        :class="`hyperbloomui--vertical-box hyperbloomui--${state.hyperbloomui.theme.name}--vertical-box`"
     >
         <slot />
     </div>
