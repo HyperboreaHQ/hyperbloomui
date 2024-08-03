@@ -1,6 +1,6 @@
-import { reactive } from 'vue';
+import { writable } from 'svelte/store';
 
-export default reactive({
+export default writable({
     hyperbloomui: {
         theme: {
             name: 'debug-theme',

@@ -1,4 +1,4 @@
-const themes = {
+const themes: { [key: string]: Promise<any> } = {
     'debug-theme': import('./debug-theme/index')
 };
 

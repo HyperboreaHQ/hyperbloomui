@@ -3,23 +3,25 @@
     "version": "0.1.0",
     "description": "Vuejs UI framework for the hyperbloom app",
     "private": true,
+    "type": "module",
     "main": "./src/index.ts",
     "repository": "https://github.com/HyperboreaHQ/hyperbloomui",
     "author": "Nikita Podvirnyi <krypt0nn@vk.com>",
     "license": "GPL-3.0",
     "scripts": {
         "dev": "vite",
-        "build": "vue-tsc -b && vite build",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "vue": "^3.4.35"
+        "build": "vite build",
+        "preview": "vite preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^5.1.1",
+        "@sveltejs/vite-plugin-svelte": "^3.1.1",
+        "@tsconfig/svelte": "^5.0.4",
         "sass": "^1.77.8",
+        "svelte": "^4.2.18",
+        "svelte-check": "^3.8.4",
+        "tslib": "^2.6.3",
         "typescript": "^5.5.3",
-        "vite": "^5.3.5",
-        "vue-tsc": "^2.0.29"
+        "vite": "^5.3.5"
     }
 }

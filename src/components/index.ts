@@ -1,11 +1,11 @@
-import Text from './Text.vue';
-import Link from './Link.vue';
-import TextBox from './TextBox.vue';
-import LinkBox from './LinkBox.vue';
-import Button from './Button.vue';
-import FlatButton from './FlatButton.vue';
-import AccentButton from './AccentButton.vue';
-import ToggleButton from './ToggleButton.vue';
+import Text from './Text.svelte';
+import Link from './Link.svelte';
+import TextBox from './TextBox.svelte';
+import LinkBox from './LinkBox.svelte';
+import Button from './Button.svelte';
+import FlatButton from './FlatButton.svelte';
+import AccentButton from './AccentButton.svelte';
+import ToggleButton from './ToggleButton.svelte';
 
 export {
     Text,

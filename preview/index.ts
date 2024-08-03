@@ -1,5 +1,6 @@
-import { createApp } from 'vue';
+import PreviewApp from './PreviewApp.svelte';
 
-import PreviewApp from './PreviewApp.vue';
-
-createApp(PreviewApp).mount('#app');
+// @ts-ignore
+export default new PreviewApp({
+    target: document.body
+});
