@@ -1,0 +1,21 @@
+@mixin layout($variant, $background, $muted, $border, $text)
+    .hyperbloomui--hyperbloomui-#{$variant}--app
+        color: $text
+        background-color: $background
+
+    .hyperbloomui--hyperbloomui-#{$variant}--muted-container,
+    .hyperbloomui--hyperbloomui-#{$variant}--accent-container,
+    .hyperbloomui--hyperbloomui-#{$variant}--clamp
+        padding: 8px !important
+
+    .hyperbloomui--hyperbloomui-#{$variant}--muted-container
+        background-color: $muted
+
+    .hyperbloomui--hyperbloomui-#{$variant}--clamp
+        background-color: $muted
+
+    .hyperbloomui--hyperbloomui-#{$variant}--link
+        color: $text
+
+        &:hover
+            color: var(--hyperbloomui--colors--accent)

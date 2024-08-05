@@ -1,5 +1,7 @@
 <script lang="ts">
-    import { loadTheme } from '../themes/index';
+    import { onMount } from 'svelte';
+
+    import { loadTheme } from '../themes';
 
     import state from '../state';
 
@@ -8,14 +10,21 @@
 
     let currentTheme: string | null = null;
 
-    state.subscribe((state) => {
-        currentTheme = state.hyperbloomui.theme.name;
-        accentColor = state.hyperbloomui.theme.colors.accent;
-    });
+    $: if (typeof(accentColor) === 'string') {
+        state.update((state) => {
+            console.log(`[app] loaded accent color: ${accentColor}`);
+
+            state.hyperbloomui.theme.colors.accent = accentColor;
+
+            return state;
+        });
+    }
 
     $: loadTheme(theme)
         .then((name) => {
             state.update((state) => {
+                console.log(`[app] loaded theme: ${name}`);
+
                 state.hyperbloomui.theme.name = name;
 
                 return state;
@@ -23,11 +32,13 @@
         })
         .catch((err) => console.error(`Failed to load theme ${theme}: ${err}`));
 
-    $: state.update((state) => {
-        if (typeof(accentColor) === 'string')
-            state.hyperbloomui.theme.colors.accent = accentColor;
+    onMount(() => {
+        state.subscribe((state) => {
+            console.log('[app] hydrating state', state);
 
-        return state;
+            currentTheme = state.hyperbloomui.theme.name;
+            accentColor = state.hyperbloomui.theme.colors.accent;
+        });
     });
 </script>
 
@@ -40,6 +51,10 @@
 
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         font-size: 16px
+
+        *
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-size: 16px
 </style>
 
 <div

@@ -1,5 +1,10 @@
 const themes: { [key: string]: Promise<any> } = {
-    'debug-theme': import('./debug-theme/index')
+    'debug-theme': import('./debug-theme'),
+    'hyperbloomui-light': import('./hyperbloomui/light'),
+    'hyperbloomui-dark': import('./hyperbloomui/dark'),
+    'hyperbloomui-solarized': import('./hyperbloomui/solarized'),
+    'hyperbloomui-nord': import('./hyperbloomui/nord'),
+    'hyperbloomui-midnight': import('./hyperbloomui/midnight')
 };
 
 /**

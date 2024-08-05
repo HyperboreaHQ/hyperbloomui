@@ -1,0 +1,31 @@
+@mixin components($variant, $background, $muted, $border, $text)
+    .hyperbloomui--hyperbloomui-#{$variant}--button,
+    .hyperbloomui--hyperbloomui-#{$variant}--flat-button,
+    .hyperbloomui--hyperbloomui-#{$variant}--accent-button,
+    .hyperbloomui--hyperbloomui-#{$variant}--toggle-button
+        padding: 6px 8px !important
+
+        color: $text
+        background-color: unset
+
+        border: 1px solid $border
+
+        &:hover
+            background-color: $border
+
+    .hyperbloomui--hyperbloomui-#{$variant}--flat-button
+        border: none
+
+    .hyperbloomui--hyperbloomui-#{$variant}--accent-button,
+    .hyperbloomui--hyperbloomui-#{$variant}--toggle-button
+        border: none
+
+        &:hover
+            background-color: var(--hyperbloomui--colors--accent)
+
+    .hyperbloomui--hyperbloomui-#{$variant}--accent-button
+        background-color: var(--hyperbloomui--colors--accent)
+
+    .hyperbloomui--hyperbloomui-#{$variant}--toggle-button
+        &.hyperbloomui--hyperbloomui-#{$variant}--toggle-button--toggled
+            background-color: var(--hyperbloomui--colors--accent)

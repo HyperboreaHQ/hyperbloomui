@@ -20,7 +20,7 @@
     } from '../src/index';
 </script>
 
-<App accentColor="red">
+<App theme={'hyperbloomui-light'} accentColor={'#84a98c'}>
     <HorizontalBox justify={Justify.Middle} spacing={'8px'}>
         <Text>123</Text>
         <Text>123</Text>
